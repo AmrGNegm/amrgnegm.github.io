@@ -175,19 +175,6 @@ img {
   gap: 12px;
 }
 
-.navbar__right .btn-login {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--color-gray-600);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  transition: color var(--transition);
-}
-
-.navbar__right .btn-login:hover {
-  color: var(--color-primary);
-}
-
 .navbar__right .btn-contact {
   font-size: 0.875rem;
   font-weight: 600;
@@ -845,7 +832,6 @@ img {
   border-radius: 50%;
   background: rgba(255,255,255,0.1);
   color: var(--color-white);
-  font-size: 1.1rem;
   transition: background var(--transition);
 }
 
@@ -958,8 +944,8 @@ img {
     display: block;
   }
 
-  .navbar__right .btn-login {
-    display: none;
+.navbar__toggle {
+    display: block;
   }
 
   .hero h1 {

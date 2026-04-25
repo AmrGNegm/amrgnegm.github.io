@@ -39,35 +39,39 @@
 
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
-  var forms = document.querySelectorAll('[data-lead-form]');
+  var forms = document.querySelectorAll('[data-formsubmit]');
   forms.forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('.btn');
       var originalText = btn.textContent;
-      btn.textContent = 'Thanks! Check your email.';
+      btn.textContent = 'Sending...';
       btn.disabled = true;
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        form.reset();
-      }, 3000);
+
+      var formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (response) {
+        if (response.ok) {
+          btn.textContent = 'Sent! Thanks!';
+          form.reset();
+        } else {
+          btn.textContent = 'Error. Try again.';
+        }
+      })
+      .catch(function () {
+        btn.textContent = 'Error. Try again.';
+      })
+      .finally(function () {
+        setTimeout(function () {
+          btn.textContent = originalText;
+          btn.disabled = false;
+        }, 3000);
+      });
     });
   });
-
-  var contactForm = document.querySelector('[data-contact-form]');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = contactForm.querySelector('.btn');
-      var originalText = btn.textContent;
-      btn.textContent = 'Message Sent!';
-      btn.disabled = true;
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        contactForm.reset();
-      }, 3000);
-    });
-  }
 })();
