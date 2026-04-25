@@ -39,39 +39,17 @@
 
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
-  var forms = document.querySelectorAll('[data-formsubmit]');
-  forms.forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = form.querySelector('.btn');
-      var originalText = btn.textContent;
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-
-      var formData = new FormData(form);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      })
-      .then(function (response) {
-        if (response.ok) {
-          btn.textContent = 'Sent! Thanks!';
-          form.reset();
-        } else {
-          btn.textContent = 'Error. Try again.';
-        }
-      })
-      .catch(function () {
-        btn.textContent = 'Error. Try again.';
-      })
-      .finally(function () {
-        setTimeout(function () {
-          btn.textContent = originalText;
-          btn.disabled = false;
-        }, 3000);
-      });
-    });
-  });
+  var urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('sent') === 'true') {
+    var toast = document.getElementById('success-toast');
+    if (toast) {
+      toast.classList.add('toast--visible');
+      setTimeout(function () {
+        toast.classList.remove('toast--visible');
+      }, 5000);
+    }
+    if (window.history.replaceState) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }
 })();

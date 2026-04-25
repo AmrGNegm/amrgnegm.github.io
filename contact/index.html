@@ -44,11 +44,11 @@
 
   <section class="contact-page">
     <div class="container">
-      <form action="https://formsubmit.co/amr.g.negm@gmail.com" method="POST" data-formsubmit data-contact-form>
+      <form action="https://formsubmit.co/amr.g.negm@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New contact message from AmrNegm portfolio">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://amrgnegm.github.io/contact/index.html">
+        <input type="hidden" name="_next" value="https://amrgnegm.github.io/contact/?sent=true">
         <div class="form-group">
           <label for="contact-name">Name</label>
           <input type="text" id="contact-name" name="name" placeholder="Your name" required>
@@ -80,6 +80,7 @@
     </div>
   </section>
 
+  <div class="toast" id="success-toast">Message sent! I'll get back to you soon.</div>
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">

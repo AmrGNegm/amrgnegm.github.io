@@ -1,4 +1,4 @@
-# Portfolio Website Plan — AmrGNegm
+# Portfolio Website Plan — Amr Negm
 
 ## Tech Stack
 - **Plain HTML/CSS/JS** — no build step, direct GitHub Pages deploy
@@ -6,6 +6,10 @@
 - **Colors** — UI/UX standard palette (neutral grays, primary blue `#2563eb`, accent `#0ea5e9`, dark `#111827`, white `#ffffff`, background `#f9fafb`)
 - **Typography** — System font stack (`-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif`)
 - **No e-commerce/shopping cart**
+- **No Log In / account functionality** (removed)
+- **Contact form**: FormSubmit.co → amr.g.negm@gmail.com
+- **CTA**: "30 Mins with Me" → calendly.com/amr-negm
+- **Social icons**: Inline SVGs (LinkedIn, GitHub, X/Twitter, Facebook)
 
 ## File Structure
 ```
@@ -80,9 +84,20 @@ AmrGNegm/
 ## Phase 6: GitHub Pages Deployment
 | Task | Description | Status |
 |------|-------------|--------|
-| 6.1 | Push code to `main` branch | PENDING |
-| 6.2 | Enable GitHub Pages from repo Settings → Pages → Source: `main` / root | PENDING |
-| 6.3 | Verify site at `https://amrgnegm.github.io/` | PENDING |
+| 6.1 | Push code to `main` branch | DONE |
+| 6.2 | Enable GitHub Pages from repo Settings → Pages → Source: `main` / root | DONE |
+| 6.3 | Verify site at `https://amrgnegm.github.io/` | DONE |
+
+## Phase 7: Fix GitHub Pages Root URL & Form Submission
+| Task | Description | Status |
+|------|-------------|--------|
+| 7.1 | Delete old `amrgnegm.github.io` repo (generic template) | DONE (user action) |
+| 7.2 | Rename `AmrGNegm` repo → `amrgnegm.github.io` | DONE (user action) |
+| 7.3 | Update git remote URL to `https://github.com/AmrGNegm/amrgnegm.github.io.git` | DONE |
+| 7.4 | Fix FormSubmit: replace AJAX fetch() with native form submission + `?sent=true` redirect | DONE |
+| 7.5 | Update all FormSubmit `_next` URLs to `https://amrgnegm.github.io/` paths with `?sent=true` | DONE |
+| 7.6 | Add success toast/banner CSS + HTML to all form pages (homepage, training, monitoring, blog, contact) | DONE |
+| 7.7 | Verify site loads correctly at `https://amrgnegm.github.io/` | PENDING |
 
 ## Deferred Items
 - Profile photo (to be added later)
