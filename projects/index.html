@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Data health monitoring service by Amr Negm — coming soon. Daily insights into your SQL Server and Azure data infrastructure.">
-  <title>Monitoring — Amr Negm</title>
+  <meta name="description" content="Case studies showcasing data integration, ADF pipelines, Power BI dashboards, and data governance work across Banking, FMCG, Digital Retail, and CX.">
+  <meta property="og:title" content="Projects — Amr Negm | Data Integration & BI Architect">
+  <meta property="og:description" content="Case studies of multi-system integration, star schema DWH, and end-to-end Power BI dashboards for Banking, FMCG, and Digital Retail.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amrgnegm.github.io/projects/">
+  <title>Projects — Amr Negm | Data Integration &amp; BI Architect</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -22,14 +26,14 @@
             <li><a href="../consulting/migrations.html">Migrations &amp; Upgrades</a></li>
           </ul>
         </li>
-        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="index.html" class="active">Projects</a></li>
         <li><a href="../training/index.html">Training</a></li>
-        <li><a href="index.html">Monitoring</a></li>
+        <li><a href="../monitoring/index.html">Monitoring</a></li>
         <li><a href="../scripts/index.html">Scripts</a></li>
         <li><a href="../blog/index.html">Blog</a></li>
       </ul>
       <div class="navbar__right">
-        <a href="https://calendly.com/amr-negm" class="btn-contact" target="_blank" rel="noopener">30 Mins with Me</a>
+        <a href="https://calendly.com/amr-negm" target="_blank" rel="noopener" class="btn-contact">30 Mins with Me</a>
       </div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -39,29 +43,90 @@
 
   <section class="page-header">
     <div class="container">
-      <h1>Data Health Monitoring</h1>
-      <p>Know what&rsquo;s happening in your data infrastructure &mdash; before it becomes a problem.</p>
+      <h1>Projects &amp; Case Studies</h1>
+      <p>Real-world data platforms I&rsquo;ve designed, built, and operated across Banking, FMCG, Digital Retail, and CX.</p>
     </div>
   </section>
 
-  <section class="coming-soon">
+  <section class="section">
     <div class="container">
-      <div class="coming-soon__icon">&#128200;</div>
-      <h2>Monitoring is coming soon!</h2>
-      <p>Imagine getting a simple, clear email every morning telling you the most important things happening in your SQL Server and Azure environment. No more surprise outages, no more guessing. That&rsquo;s what I&rsquo;m building.</p>
-      <p>Sign up to be notified when this service launches.</p>
-      <form class="coming-soon__form" action="https://formsubmit.co/amr.g.negm@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New subscriber from AmrNegm portfolio">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://amrgnegm.github.io/monitoring/?sent=true">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit" class="btn btn-primary">Notify Me</button>
-      </form>
+      <div class="case-study-grid">
+
+        <div class="case-study-card">
+          <div class="case-study-card__tag">Banking</div>
+          <h2>Bank Albilad &mdash; Enterprise Data Platform</h2>
+          <p class="case-study-card__subtitle">Data Integration &amp; BI Architect</p>
+          <p>Architected and delivered the enterprise data platform for Bank Albilad &mdash; a star schema data warehouse fed by Azure Data Factory pipelines connecting core banking, CRM, and operational systems. Built end-to-end Power BI dashboards for branch performance, product analytics, and regulatory reporting.</p>
+          <ul class="case-study-card__tech">
+            <li>Star Schema DWH</li>
+            <li>Azure Data Factory</li>
+            <li>Power BI</li>
+            <li>DAX</li>
+            <li>Data Governance</li>
+            <li>SSOT Design</li>
+          </ul>
+          <p class="case-study-card__impact">Consolidated 5+ data sources into a single governed data warehouse serving dashboards across the organization.</p>
+        </div>
+
+        <div class="case-study-card">
+          <div class="case-study-card__tag">Digital Retail / F&amp;B</div>
+          <h2>Shawarmer &mdash; Multi-Source BI Platform</h2>
+          <p class="case-study-card__subtitle">BI Developer &amp; Data Engineer (Consulting)</p>
+          <p>Designed and built the end-to-end BI platform for Shawarmer, integrating data from POS, CRM, inventory, and supply chain systems. Delivered self-service Power BI dashboards for operations, sales, and management &mdash; transforming fragmented data into actionable business insights.</p>
+          <ul class="case-study-card__tech">
+            <li>Multi-Source Integration</li>
+            <li>ADF Pipelines</li>
+            <li>Power BI</li>
+            <li>SQL Server</li>
+            <li>POS Data</li>
+            <li>Self-Service BI</li>
+          </ul>
+          <p class="case-study-card__impact">Unified 4+ operational data sources into one reporting platform, replacing manual Excel workflows.</p>
+        </div>
+
+        <div class="case-study-card">
+          <div class="case-study-card__tag">CX / BPO</div>
+          <h2>Teleperformance &mdash; SSOT Reporting Platform</h2>
+          <p class="case-study-card__subtitle">Senior BI Developer &amp; Azure Data Engineer</p>
+          <p>Built the single source of truth reporting platform for Teleperformance, consolidating CX data across multiple systems. Led ETL development, mentored junior data engineers, and delivered operational dashboards that management relied on daily.</p>
+          <ul class="case-study-card__tech">
+            <li>Azure Data Factory</li>
+            <li>SSOT Architecture</li>
+            <li>Power BI</li>
+            <li>Azure SQL</li>
+            <li>ETL Pipelines</li>
+            <li>Team Mentorship</li>
+          </ul>
+          <p class="case-study-card__impact">Established SSOT reporting across CX operations, eliminating data conflicts between departmental reports.</p>
+        </div>
+
+        <div class="case-study-card">
+          <div class="case-study-card__tag">FMCG</div>
+          <h2>Unilever &mdash; Pricing &amp; Supply Chain Analytics</h2>
+          <p class="case-study-card__subtitle">BI Consultant (Freelance)</p>
+          <p>Delivered data modelling and pricing analytics solutions for Unilever &mdash; building the data foundation for pricing intelligence and supply chain visibility. Designed data models that connected pricing, promotions, and distribution data into actionable dashboards.</p>
+          <ul class="case-study-card__tech">
+            <li>Data Modelling</li>
+            <li>Pricing Analytics</li>
+            <li>Power BI</li>
+            <li>SQL Server</li>
+            <li>Supply Chain Data</li>
+            <li>DAX Measures</li>
+          </ul>
+          <p class="case-study-card__impact">Enabled pricing and supply chain teams to make data-driven decisions with real-time distribution visibility.</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <div class="toast" id="success-toast">Thanks! You've been subscribed.</div>
+  <section class="section section--alt" style="text-align: center; padding: 60px 0;">
+    <div class="container">
+      <h2 style="font-size: 1.75rem; color: var(--color-dark); margin-bottom: 12px;">Need something like this for your organization?</h2>
+      <p style="font-size: 1.05rem; color: var(--color-gray-600); margin-bottom: 24px;">Let&rsquo;s discuss how I can architect and deliver your data platform.</p>
+      <a href="https://calendly.com/amr-negm" target="_blank" rel="noopener" class="btn btn-primary">30 Mins with Me</a>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -89,7 +154,7 @@
           <h4>Resources</h4>
           <ul>
             <li><a href="../training/index.html">Training</a></li>
-            <li><a href="index.html">Monitoring</a></li>
+            <li><a href="../monitoring/index.html">Monitoring</a></li>
             <li><a href="../scripts/index.html">Scripts</a></li>
             <li><a href="../blog/index.html">Blog</a></li>
           </ul>
