@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bank Albilad case study — Enterprise data platform architecture for banking: star schema DWH, ADF pipelines, Power BI dashboards, and data governance.">
+  <meta property="og:title" content="Bank Albilad — Enterprise Data Platform | Amr Negm">
+  <meta property="og:description" content="Architecting the enterprise data platform for Bank Albilad: star schema DWH, ADF pipelines, Power BI dashboards, and data governance for banking operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amrgnegm.github.io/projects/bank-albilad.html">
+  <meta property="og:image" content="https://amrgnegm.github.io/assets/images/og-image.png">
+  <title>Bank Albilad — Enterprise Data Platform | Amr Negm</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar__brand">Amr<span>Negm</span></a>
+      <ul class="navbar__links">
+        <li class="dropdown-parent">
+          <a href="../consulting/index.html">Consulting</a>
+          <ul class="dropdown">
+            <li><a href="../consulting/data-architecture.html">Data Integration Architecture</a></li>
+            <li><a href="../consulting/performance-tuning.html">Performance Tuning</a></li>
+            <li><a href="../consulting/remote-data-engineering.html">Remote Data Engineering</a></li>
+            <li><a href="../consulting/migrations.html">Migrations &amp; Upgrades</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html" class="active">Projects</a></li>
+        <li><a href="../training/index.html">Training</a></li>
+        <li><a href="../monitoring/index.html">Monitoring</a></li>
+        <li><a href="../scripts/index.html">Scripts</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+      </ul>
+      <div class="navbar__right">
+        <a href="https://calendly.com/amr-negm" target="_blank" rel="noopener" class="btn-contact">30 Mins with Me</a>
+      </div>
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <p style="font-size:0.875rem;text-transform:uppercase;letter-spacing:2px;color:var(--color-accent);margin-bottom:12px;">Banking &amp; Financial Services</p>
+      <h1>Bank Albilad &mdash; Enterprise Data Platform</h1>
+      <p>Architecting the data platform that consolidates banking data sources into a governed, single-source-of-truth data warehouse.</p>
+    </div>
+  </section>
+
+  <section class="consulting-detail">
+    <div class="container">
+      <h2>The Challenge</h2>
+      <p>Bank Albilad needed a unified data platform that could integrate data from core banking systems, CRM platforms, and operational databases into a single, governed data warehouse. The existing reporting infrastructure relied on manual Excel workflows, with data fragmented across multiple systems and no standardized data model. Business users couldn&rsquo;t get consistent answers to the same questions.</p>
+
+      <h2>My Role</h2>
+      <p>Data Integration &amp; BI Architect &mdash; responsible for designing and delivering the end-to-end data platform, from source system integration through to self-service Power BI dashboards.</p>
+
+      <h2>Architecture</h2>
+      <ul>
+        <li><strong>Star Schema Data Warehouse:</strong> Designed a dimensional model (fact and dimension tables) optimized for banking analytics &mdash; branch performance, product analytics, and regulatory reporting.</li>
+        <li><strong>Azure Data Factory Pipelines:</strong> Built and orchestrated multi-source ingestion pipelines connecting core banking, CRM, and operational systems with proper dependency chains and error handling.</li>
+        <li><strong>Data Governance &amp; SSOT:</strong> Established data quality rules, lineage tracking, and a governance framework ensuring all dashboards drew from the same validated sources.</li>
+        <li><strong>Power BI Dashboards:</strong> Delivered end-to-end dashboards for branch performance, product analytics, and management reporting &mdash; with row-level security and incremental refresh.</li>
+      </ul>
+
+      <h2>Results</h2>
+      <ul>
+        <li>Consolidated 5+ data sources into a single governed data warehouse</li>
+        <li>Eliminated conflicting numbers between departmental reports through SSOT architecture</li>
+        <li>Reduced manual reporting effort by replacing Excel workflows with automated Power BI dashboards</li>
+        <li>Enabled self-service analytics for business users with governed, validated data</li>
+      </ul>
+
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>Azure Data Factory</li>
+        <li>Azure SQL Database</li>
+        <li>SQL Server (Star Schema DWH)</li>
+        <li>Power BI (Desktop &amp; Service)</li>
+        <li>DAX &amp; Power Query (M)</li>
+        <li>Row-Level Security</li>
+        <li>Incremental Refresh</li>
+      </ul>
+
+      <a href="https://calendly.com/amr-negm" class="btn btn-primary" target="_blank" rel="noopener">Discuss a Similar Project</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Amr<span>Negm</span></div>
+          <p class="footer__desc">Data Integration &amp; BI Architect helping enterprises build reliable, governed data platforms with Azure, Power BI, and Microsoft Fabric.</p>
+        </div>
+        <div>
+          <h4>Consulting</h4>
+          <ul>
+            <li><a href="../consulting/data-architecture.html">Data Integration Architecture</a></li>
+            <li><a href="../consulting/performance-tuning.html">Performance Tuning</a></li>
+            <li><a href="../consulting/remote-data-engineering.html">Remote Data Engineering</a></li>
+            <li><a href="../consulting/migrations.html">Migrations &amp; Upgrades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="../training/index.html">Training</a></li>
+            <li><a href="../monitoring/index.html">Monitoring</a></li>
+            <li><a href="../scripts/index.html">Scripts</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="../contact/index.html">Contact Me</a></li>
+            <li><a href="https://calendly.com/amr-negm" target="_blank" rel="noopener">30 Mins with Me</a></li>
+            <li><a href="https://www.linkedin.com/in/amrgnegm">LinkedIn</a></li>
+            <li><a href="https://github.com/AmrGNegm">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="copyright-year">2026</span> Amr Negm. All Rights Reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
